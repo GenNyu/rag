@@ -11,7 +11,7 @@ permissions:
   id-token: write
 jobs:
   claude:
-    runs-on: vibe-code
+    runs-on: rag
     steps:
       - uses: actions/checkout@v4      # ← THÊM DÒNG NÀY
         with:
