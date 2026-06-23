@@ -1,0 +1,20 @@
+llm:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+
+embeddings:
+  provider: openai
+  model: text-embedding-3-small
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 50
+
+vectordb:
+  provider: chroma
+  persist_directory: ./data/vectordb
+
+api:
+  host: 0.0.0.0
+  port: 8000
